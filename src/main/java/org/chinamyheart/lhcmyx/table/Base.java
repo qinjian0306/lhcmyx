@@ -1,4 +1,4 @@
-package org.chinamyheart.community.table;
+package org.chinamyheart.lhcmyx.table;
 
 
 import lombok.Data;

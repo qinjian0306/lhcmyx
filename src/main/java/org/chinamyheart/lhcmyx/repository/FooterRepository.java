@@ -1,7 +1,6 @@
-package org.chinamyheart.community.repository;
+package org.chinamyheart.lhcmyx.repository;
 
-import org.chinamyheart.community.table.Footer;
-import org.chinamyheart.community.table.Header;
+import org.chinamyheart.lhcmyx.table.Footer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

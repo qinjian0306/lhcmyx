@@ -1,15 +1,12 @@
-package org.chinamyheart.community.controller;
+package org.chinamyheart.lhcmyx.controller;
 
-import org.chinamyheart.community.repository.FooterRepository;
-import org.chinamyheart.community.repository.HeaderRepository;
-import org.chinamyheart.community.repository.MenuRepository;
-import org.chinamyheart.community.table.Menu;
+import org.chinamyheart.lhcmyx.repository.FooterRepository;
+import org.chinamyheart.lhcmyx.repository.HeaderRepository;
+import org.chinamyheart.lhcmyx.repository.MenuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @Controller
 public class LhcmyxController {

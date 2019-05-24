@@ -1,4 +1,4 @@
-package org.chinamyheart.community;
+package org.chinamyheart.lhcmyx;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

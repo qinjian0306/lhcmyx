@@ -1,6 +1,6 @@
-package org.chinamyheart.community.repository;
+package org.chinamyheart.lhcmyx.repository;
 
-import org.chinamyheart.community.table.Menu;
+import org.chinamyheart.lhcmyx.table.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
