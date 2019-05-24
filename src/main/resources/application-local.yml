@@ -1,0 +1,31 @@
+server:
+  port: 8787
+
+spring:
+   datasource:
+     name: user
+     url: jdbc:mysql://localhost/lhcmyx?useUnicode=true&characterEncoding=utf-8
+     username: root
+     password: guoguo311
+
+   jpa:
+      hibernate:
+        ddl-auto: update
+
+   freemarker:
+      allowRequestOverride: false
+      allowSessionOverride: false
+      cache: true
+      checkTemplateLocation: true
+      contentType: text/html
+      exposeRequestAttributes: false
+      exposeSessionAttributes: false
+      exposeSpringMacroHelpers: false
+      suffix: .ftl
+      templateEncoding: UTF-8
+      templateLoaderPath: classpath:/static/
+      spring.freemarker.settings:
+          locale: zh_CN
+          date_format: yyyy-MM-dd
+          time_format: HH:mm:ss
+          datetime_format: yyyy-MM-dd HH:mm:ss
