@@ -39,7 +39,8 @@
         </ul>
 	</div>
 	<div id="jsbanner">
-		<img src="images/dsj_banner.jpg">
+        <img src="${content.banner}">
+		<#--<img src="images/dsj_banner.jpg">-->
 	</div>
 	<div id="jscontents">
 		<div class="text">
@@ -56,7 +57,8 @@
 						<li><span class="lastli"></span></li>
 					</ul>
 				</div>
-				<div class="sjyou">
+				${content.introduce}
+				<#--<div class="sjyou">
 					<div class="jsyouwenzi">
 						<p class="jsbt">大事件</p>
 					</div>
@@ -274,7 +276,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

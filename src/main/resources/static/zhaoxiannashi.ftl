@@ -41,7 +41,8 @@
 		</ul>
 	</div>
 	<div id="jsbanner">
-		<img src="images/zxns_banner.jpg">
+        <img src="${content.banner}">
+		<#--<img src="images/zxns_banner.jpg">-->
 	</div>
 	<div id="jscontents">
 		<div class="text">
@@ -63,7 +64,8 @@
 						<li><span class="lastli"></span></li>
 					</ul>
 				</div>
-				<div class="sjyou">
+				${content.introduce}
+				<#--<div class="sjyou">
 					<div class="jsyouwenzi">
 						<p class="jsbt">招贤纳士</p>
 					</div>
@@ -87,7 +89,7 @@
 							<input id="check" type="checkbox"><span id="zc1">全选</span><a href="javascript:;"><img src="images/sqzhiwei.jpg"></a><a href="javascript:;"><img src="images/shoucangzhiwei.jpg"></a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

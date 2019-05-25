@@ -39,7 +39,8 @@
         </ul>
 	</div>
 	<div id="jsbanner">
-		<img src="images/cxtx.jpg">
+        <img src="${content.banner}">
+		<#--<img src="images/cxtx.jpg">-->
 	</div>
 	<div id="jscontents">
 		<div class="text">
@@ -61,7 +62,8 @@
 						<li><span class="lastli"></span></li>
 					</ul>
 				</div>
-				<div class="sjyou">
+				${content.introduce}
+				<#--<div class="sjyou">
 					<div class="jsyouwenzi">
 						<p class="jsbt">企业文化</p>
 					</div>
@@ -107,7 +109,7 @@
 							<li>做弘扬中式文化和中式文化产业发展的推动企业</li>
 						</ul>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

@@ -42,9 +42,12 @@
 		<section id="imgs">
 				<div id="bbox">
 					<ul>
-						<li><img src="images/banner.png" width="100%" alt="01"></li>
+                        <li><img src="${content.banner}" width="100%" alt="01"></li>
+                        <li><img src="${content.banner2}" width="100%" alt="02"></li>
+                        <li><img src="${content.banner3}" width="100%" alt="03"></li>
+						<#--<li><img src="images/banner.png" width="100%" alt="01"></li>
 						<li><img src="images/banner1.jpg" width="100%" alt="02"></li>
-						<li><img src="images/Banner2.jpg" width="100%" alt="03"></li>
+						<li><img src="images/Banner2.jpg" width="100%" alt="03"></li>-->
 					</ul>
 				</div>
 				<a href="javascript:;" id="prev">&lt;</a>
@@ -56,7 +59,8 @@
 				</section>
 			</section>
 	</div>
-	<div id="nr1">
+	${content.introduce}
+	<#--<div id="nr1">
 		<div class="text">
 			<div class="bb clearfix">
 				<div id="bzuo">
@@ -270,7 +274,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<div id="footer">
 			<p>${footer.company} 版权所有&nbsp;&nbsp;&nbsp;${footer.icp}</p>
 			<p>地址：${footer.address}&nbsp;&nbsp;&nbsp;电话（总机）：${footer.phone1}&nbsp;&nbsp;&nbsp;电话（传真）：${footer.phone2}</p>

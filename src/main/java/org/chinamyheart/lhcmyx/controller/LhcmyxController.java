@@ -1,8 +1,10 @@
 package org.chinamyheart.lhcmyx.controller;
 
+import org.chinamyheart.lhcmyx.model.MenuContentType;
 import org.chinamyheart.lhcmyx.repository.FooterRepository;
 import org.chinamyheart.lhcmyx.repository.HeaderRepository;
 import org.chinamyheart.lhcmyx.repository.MenuRepository;
+import org.chinamyheart.lhcmyx.repository.MenuContentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,12 +22,17 @@ public class LhcmyxController {
     @Autowired
     private FooterRepository footerRepository;
 
+    @Autowired
+    private MenuContentRepository menuContentRepository;
+
 
     @RequestMapping("/")
     public String index(Model model){
         model.addAttribute("header",headerRepository.findAll().get(0));
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.INDEX).get());
         return "/index";
     }
 
@@ -34,6 +41,8 @@ public class LhcmyxController {
         model.addAttribute("header",headerRepository.findAll().get(0));
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.INDEX).get());
         return "/index";
     }
 
@@ -43,6 +52,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.QIYEJIESHAO).get());
         return "/qiyejieshao";
     }
 
@@ -52,6 +63,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.YEWUFANWEI).get());
         return "/yewufanwei";
     }
 
@@ -60,6 +73,8 @@ public class LhcmyxController {
         model.addAttribute("header",headerRepository.findAll().get(0));
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.DASHIJIAN).get());
         return "/dashijian";
     }
 
@@ -69,6 +84,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.QIYEWENHUA).get());
         return "/qiyewenhua";
     }
 
@@ -78,6 +95,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.HUIYIHUODONG).get());
         return "/huiyihuodong";
     }
 
@@ -87,6 +106,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.YUANGONGSHENGHUO).get());
         return "/yuangongshenghuo";
     }
 
@@ -96,6 +117,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.QINGCHUNBANGYANG).get());
         return "/qingchunbangyang";
     }
 
@@ -105,6 +128,8 @@ public class LhcmyxController {
         model.addAttribute("footer",footerRepository.findAll().get(0));
         model.addAttribute("menuList",menuRepository.findAll());
         model.addAttribute("menuLeftList",menuRepository.findAllByLeft(true));
+
+        model.addAttribute("content", menuContentRepository.findByType(MenuContentType.ZHAOXIANNASHI).get());
         return "/zhaoxiannashi";
     }
 

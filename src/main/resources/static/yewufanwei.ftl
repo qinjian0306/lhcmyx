@@ -39,7 +39,8 @@
         </ul>
 	</div>
 	<div id="jsbanner">
-		<img src="images/ywfw_banner.jpg">
+        <img src="${content.banner}">
+		<#--<img src="images/ywfw_banner.jpg">-->
 	</div>
 	<div id="jscontents">
 		<div class="text">
@@ -61,7 +62,8 @@
 						<li><span class="lastli2"></span></li>
 					</ul>
 				</div>
-				<div class="ywyou">
+				${content.introduce}
+				<#--<div class="ywyou">
 					<div class="jsyouwenzi">
 						<p class="jsbt">业务范围</p>
 					</div>
@@ -144,7 +146,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
